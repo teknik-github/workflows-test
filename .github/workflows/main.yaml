@@ -18,6 +18,6 @@ jobs:
     - name: Deploy to Kubernetes via SSH and Git clone
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.PUBLIC }} -p ${{ secrets.PORT }} "
-          cd /home/ubuntu/kubernetes/cbt-kubernetes
+          cd /home/ubuntu/kubernetes/workflows-test
           git pull
         "
